@@ -59,9 +59,6 @@ function updateClock() {
   updatePeriod(now);
 }
 
-setInterval(updateClock, 1000);
-updateClock();
-
 // 倒计时
 let timerInterval = null;
 let timerEnd = 0;
@@ -147,5 +144,11 @@ function updatePeriod(now) {
       return;
     }
   }
+}
+
+// 只在浏览器端执行
+if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+  setInterval(updateClock, 1000);
+  updateClock();
 }
 </script>
