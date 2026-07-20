@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jian-zhan-da-zi",
+  "compatibility_date": "2026-07-20",
+  "assets": {
+    "directory": ".vitepress/dist"
+  },
+  "compatibility_flags": ["nodejs_compat"]
+}
