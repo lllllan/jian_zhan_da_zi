@@ -6,9 +6,11 @@ title: 随机抽取
 
 输入学生名单，支持分组管理、批量抽取、抽过不再抽，名单自动保存。
 
+<ClientOnly>
 <div id="random-app"></div>
+</ClientOnly>
 
-<script>
+<script setup>
 if (typeof window !== 'undefined' && typeof document !== 'undefined') {
   // ====== 数据管理 ======
   const STORAGE_KEY = 'landers-random-groups';
