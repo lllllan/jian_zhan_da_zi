@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Landers 课堂工具箱',
-  description: '课堂小工具集合 - 随机抽学生、在线时间等',
+  description: '课堂小工具集合 - 随机抽取、在线时间、数学老师工具箱等',
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
@@ -14,8 +14,9 @@ export default defineConfig({
       {
         text: '小工具',
         items: [
-          { text: '随机抽取学生', link: '/tools/random-student' },
-          { text: '在线时间', link: '/tools/online-clock' }
+          { text: '随机抽取', link: '/tools/random-student' },
+          { text: '在线时间', link: '/tools/online-clock' },
+          { text: '初中数学老师必备工具箱', link: '/tools/math-teacher-toolkit' }
         ]
       }
     ],
@@ -25,15 +26,21 @@ export default defineConfig({
         {
           text: '课堂工具',
           items: [
-            { text: '随机抽取学生', link: '/tools/random-student' },
+            { text: '随机抽取', link: '/tools/random-student' },
             { text: '在线时间', link: '/tools/online-clock' }
+          ]
+        },
+        {
+          text: '资源导航',
+          items: [
+            { text: '初中数学老师必备工具箱', link: '/tools/math-teacher-toolkit' }
           ]
         }
       ]
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/lllllan' }
+      { icon: 'github', link: 'https://github.com/lllllan/jian_zhan_da_zi' }
     ],
 
     footer: {
